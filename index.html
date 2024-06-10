@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="style.css">
+
+<body>
+    <div class="calculator">
+        <input type="text" id="display">
+        <div class="button-container">
+            <button class="calbutton" onclick="CurrentDisplay='';
+             document.querySelector('#display').value=CurrentDisplay;">
+             C</button>
+
+            <button class="calbutton" onclick="CurrentDisplay=CurrentDisplay+'1';
+             document.querySelector('#display').value=CurrentDisplay;
+            ">1</button>
+
+            <button class="calbutton" onclick="CurrentDisplay=CurrentDisplay+'2';
+            document.querySelector('#display').value=CurrentDisplay
+            "> 2</button>
+        </div>
+        <div class="button-container">
+            <button class="calbutton"onclick="CurrentDisplay=CurrentDisplay+'+';
+            document.querySelector('#display').value=CurrentDisplay
+            ">+</button>
+
+            <button class="calbutton"onclick="CurrentDisplay=CurrentDisplay+'3';
+            document.querySelector('#display').value=CurrentDisplay
+            ">3</button>
+
+            <button class="calbutton"onclick="CurrentDisplay=CurrentDisplay+'4';
+            document.querySelector('#display').value=CurrentDisplay
+            ">4</button>
+        </div>
+        <div class="button-container">
+            <button class="calbutton"onclick="CurrentDisplay=CurrentDisplay+'-';
+            document.querySelector('#display').value=CurrentDisplay
+            ">-</button>
+
+            <button class="calbutton"onclick="CurrentDisplay=CurrentDisplay+'5';
+            document.querySelector('#display').value=CurrentDisplay
+            ">5</button>
+
+            <button class="calbutton"onclick="CurrentDisplay=CurrentDisplay+'6';
+            document.querySelector('#display').value=CurrentDisplay
+            ">6</button>
+        </div>
+        <div class="button-container">
+            <button class="calbutton"onclick="CurrentDisplay=CurrentDisplay+'*';
+            document.querySelector('#display').value=CurrentDisplay
+            ">*</button>
+
+            <button class="calbutton"onclick="CurrentDisplay=CurrentDisplay+'7';
+            document.querySelector('#display').value=CurrentDisplay
+            ">7</button>
+
+            <button class="calbutton"onclick="CurrentDisplay=CurrentDisplay+'8';
+            document.querySelector('#display').value=CurrentDisplay
+            ">8</button>
+        </div>
+        <div class="button-container">
+            <button class="calbutton"onclick="CurrentDisplay=CurrentDisplay+'/';
+            document.querySelector('#display').value=CurrentDisplay
+            ">/</button>
+            
+            <button class="calbutton" onclick="let 
+            /*eval is a function which  calculate given string ...*/
+            result=eval(CurrentDisplay);
+            CurrentDisplay=result;
+            document.querySelector('#display').value=CurrentDisplay;
+            ">=</button>
+
+            <button class="calbutton"onclick="CurrentDisplay=CurrentDisplay+'9';
+            document.querySelector('#display').value=CurrentDisplay
+            ">9</button>
+        </div>
+        <div class="button-container">
+            <button class="calbutton"onclick="CurrentDisplay=CurrentDisplay+'0';
+            document.querySelector('#display').value=CurrentDisplay
+            ">0</button>
+
+            <button class="calbutton"onclick="CurrentDisplay=CurrentDisplay+'.';
+            document.querySelector('#display').value=CurrentDisplay
+            ">.</button>
+        </div>
+    </div>
+
+    <script>
+     let CurrentDisplay='';
+     document.querySelector('#display').value=CurrentDisplay;
+    </script>
+</body>
+
+</html>

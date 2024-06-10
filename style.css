@@ -1,0 +1,35 @@
+.calculator{
+    border: 1px solid rgb(187, 186, 186);
+    /* height: 400px; */
+    width: 250px;
+    margin: 10px;
+    padding-bottom: 15px;
+    border-radius: 7px; 
+    background-image: url("https://th.bing.com/th?id=OIP.NonrBUoGEongwwI8ybPSewHaEK&w=333&h=187&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=3.1&rm=2");
+}
+
+#display{
+    height: 30px;
+    margin: 10px;
+    width:  89%;
+    background-color:rgb(67, 83, 67);
+}
+
+.button-container{
+    display: flex;
+    justify-content: center; 
+ }
+
+.calbutton{
+    border-radius: 30px;
+    height: 40px;
+    width: 40px;
+    margin: 5px;
+    padding: 5px;
+    background-color: black;
+    color: white;
+     
+}
+:hover.calbutton{
+    box-shadow:1px 1px 7px 1px rgb(125, 210, 213) ;
+}
